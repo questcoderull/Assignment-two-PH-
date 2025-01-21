@@ -97,8 +97,38 @@ nav ul li a:hover {
 }
 /* header section ends */
 
+/* main styles */
+main {
+  width: 90%;
+  margin: 0 auto;
+}
 /* hero section starts */
+.hero-container {
+  justify-content: space-between;
+  align-items: center;
+}
 .hero-info h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 3.9rem;
+  margin-bottom: 24px;
+}
+.orange-text {
+  color: #fea301;
+}
+.blue-text {
+  color: #01acfd;
+}
+.hero-info p {
+  font-size: 1.25rem;
+  color: #111111;
+  margin-bottom: 24px;
+}
+.btn-enroll {
+  background-color: #111111;
+}
+.btn-enroll:hover {
+  background-color: #fea301;
 }
 /* hero section ends */
 
@@ -130,5 +160,30 @@ nav ul li a:hover {
   }
   .hamburger {
     display: block;
+  }
+
+  /* hero section */
+  .hero-container {
+    flex-direction: column-reverse;
+    gap: 20px;
+    margin-top: 25px;
+  }
+  .hero-info {
+    text-align: center;
+  }
+  .hero-info h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+  .hero-info p {
+    font-size: 0.95rem;
+  }
+  .hero-image img {
+    width: 100%;
+  }
+  .btn-enroll {
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    font-size: 1rem;
   }
 }
