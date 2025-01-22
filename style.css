@@ -124,6 +124,12 @@ main {
   color: #111111;
   margin-bottom: 24px;
 }
+.hero-image img {
+  transition: 0.5s;
+}
+.hero-image img:hover {
+  transform: scale(1.1);
+}
 .btn-enroll {
   background-color: #111111;
 }
@@ -131,6 +137,99 @@ main {
   background-color: #fea301;
 }
 /* hero section ends */
+
+/* curriculum section starts */
+.curriculum {
+  padding: 60px 100px;
+  text-align: center;
+  background-image: url(assets/bg.png);
+}
+.curriculum h2 {
+  font-size: 2.87rem;
+  font-weight: 700;
+  line-height: 57px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.curriculum-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 80px;
+}
+.box {
+  padding: 50px 40px;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 0 0 18px 1px rgba(0, 0, 0, 0.06);
+}
+.box-1 {
+  background: linear-gradient(to bottom, #def5ff, #fff, #fff, #fff);
+}
+.box-2 {
+  background: linear-gradient(to bottom, #fff4dc, #fff, #fff, #fff);
+}
+.box-3 {
+  background: linear-gradient(to bottom, #eee1ff, #fff, #fff, #fff);
+}
+.box img {
+  margin-bottom: 32px;
+}
+.box h5 {
+  font-family: "Quicksand", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #202020;
+  margin-bottom: 30px;
+}
+.box p {
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #808080;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.box a {
+  font-family: "Quicksand", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.box a:hover {
+  color: #111111;
+}
+.box {
+  transition: 0.5s;
+}
+.box:hover {
+  transform: scale(1.1);
+}
+.readmore-1 {
+  color: #01acfd;
+}
+.readmore-2 {
+  color: #f0aa00;
+}
+.readmore-3 {
+  color: #8700ff;
+}
+
+.curriculum span i {
+  font-size: 1.5rem;
+  font-weight: 800;
+  background-color: #f0aa00;
+  color: #fff;
+  padding: 20px 25px;
+  margin: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.curriculum span i:hover {
+  background-color: #111111;
+}
+/* curriculum section ends */
 
 /* resposive for smaller device */
 @media screen and (max-width: 576px) {
@@ -185,5 +284,14 @@ main {
     margin-bottom: 20px;
     padding: 10px 25px;
     font-size: 1rem;
+  }
+
+  /* curiiculum section */
+  .curriculum {
+    padding: 10%;
+  }
+  .curriculum-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
   }
 }
