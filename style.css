@@ -349,6 +349,88 @@ nav ul li a:hover {
 .for-mobile {
   display: none;
 }
+
+/* footer section starts */
+footer {
+  background-color: #01acfd;
+}
+.footer-contant {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 123px 140px 170px 140px;
+}
+.logo-footer {
+  gap: 15px;
+  margin-bottom: 35px;
+}
+#f-logo-text {
+  font-family: "Quicksand", serif;
+  font-size: 2.652rem;
+  font-weight: 700;
+  line-height: 40px;
+  color: #fff;
+}
+.footer-logo p {
+  width: 400px;
+  font-family: "Quicksand", serif;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.footer-about h4 {
+  font-family: "Quicksand", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.footer-about ul li {
+  margin-bottom: 20px;
+}
+.footer-about ul li a {
+  font-family: "Quicksand", serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #fff;
+}
+.footer-contact h4 {
+  font-family: "Quicksand", serif;
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 32px;
+}
+.footer-contact a {
+  margin-right: 10px;
+}
+.footer-contact a i {
+  transition: 0.5s;
+}
+.footer-contact a i:hover {
+  transform: scale(1.5);
+}
+.footer-contact a .fa-facebook-f,
+.fa-dribbble,
+.fa-twitter,
+.fa-google-plus-g {
+  font-size: 1.625rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+.fa-facebook-f {
+  background-color: #3b5998;
+}
+.fa-dribbble {
+  background-color: #ea4c89;
+}
+.fa-twitter {
+  background-color: #1da1f2;
+}
+.fa-google-plus-g {
+  background-color: #dd4b39;
+}
 /* resposive for smaller device */
 @media screen and (max-width: 576px) {
   .header {
@@ -462,5 +544,13 @@ nav ul li a:hover {
     border: none;
     transition: 0.5s;
     cursor: pointer;
+  }
+
+  /* footer section styles */
+  .footer-contant {
+    flex-direction: column;
+    padding: 60px 20px;
+    gap: 32px;
+    align-items: flex-start;
   }
 }
