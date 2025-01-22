@@ -69,10 +69,12 @@ nav ul li a {
   font-family: "Quicksand", serif;
   font-size: 1.25rem;
   font-weight: 500;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 nav ul li a:hover {
   font-weight: 700;
+  border-bottom: 2px solid #fea301;
+  padding-bottom: 3px;
 }
 
 #home {
@@ -392,6 +394,11 @@ footer {
   font-size: 1.25rem;
   font-weight: 500;
   color: #fff;
+  transition: 0.5s;
+}
+.footer-about ul li a:hover {
+  border-bottom: 1px solid #fff;
+  padding-bottom: 3px;
 }
 .footer-contact h4 {
   font-family: "Quicksand", serif;
@@ -431,6 +438,19 @@ footer {
 .fa-google-plus-g {
   background-color: #dd4b39;
 }
+
+/* marque styles */
+marquee {
+  font-family: "Quicksand", serif;
+  font-size: 1.25rem;
+  color: white;
+  background-color: #fea301;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+}
+
 /* resposive for smaller device */
 @media screen and (max-width: 576px) {
   .header {
@@ -498,6 +518,9 @@ footer {
     grid-template-columns: 1fr;
     gap: 15px;
   }
+  .curriculum span i {
+    display: none;
+  }
 
   /* story section */
   .story-container {
@@ -533,7 +556,9 @@ footer {
     margin-bottom: 20px;
   }
   .story-box h5 {
-    padding: 0 2% 18px 2%;
+    font-size: 0.5625rem;
+    line-height: 17.1px;
+    padding: 0 10% 18px 10%;
   }
 
   .btn-story {
@@ -558,7 +583,28 @@ footer {
     gap: 32px;
     align-items: flex-start;
   }
+  #f-logo-text {
+    font-size: 2rem;
+  }
+  .footer-logo p {
+    font-size: 1rem;
+  }
   .footer-logo p {
     width: 100%;
+  }
+
+  .footer-about h4 {
+    font-size: 1.25rem;
+  }
+  .footer-about ul li a {
+    font-size: 1rem;
+  }
+  .footer-contact h4 {
+    font-size: 1.3rem;
+  }
+  /* marquee */
+  marquee {
+    font-size: 0.857rem;
+    padding: 7px;
   }
 }
