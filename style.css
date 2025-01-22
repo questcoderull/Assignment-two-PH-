@@ -32,6 +32,7 @@
   border-radius: 12px;
   border: none;
   transition: 0.5s;
+  cursor: pointer;
 }
 .font-1 {
   font-family: "Quicksand", serif;
@@ -97,15 +98,12 @@ nav ul li a:hover {
 }
 /* header section ends */
 
-/* main styles */
-main {
-  width: 90%;
-  margin: 0 auto;
-}
 /* hero section starts */
 .hero-container {
   justify-content: space-between;
   align-items: center;
+  gap: 50px;
+  padding: 0 100px;
 }
 .hero-info h1 {
   font-size: 3.5rem;
@@ -231,6 +229,126 @@ main {
 }
 /* curriculum section ends */
 
+/* story section styles */
+.story {
+  padding: 60px 10%;
+  /* background-image: url(assets/bg.png);
+  background: linear-gradient(to top, #fea301, #ffffff); */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(254, 163, 1, 0.35)
+    ),
+    url("assets/bg.png");
+}
+.story h2 {
+  font-size: 2.87rem;
+  font-weight: 700;
+  line-height: 57px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.story-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.story-box-1 {
+  grid-row: span 2;
+}
+.story-box-1 {
+  /* width: 540px; */
+  /* height: 630px; */
+  background-color: #fff;
+  border-radius: 16px;
+}
+.story-box-1 img {
+  border-radius: 16px 16px 0 0;
+}
+.story-box-1 h5 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 38px;
+  margin-bottom: 45px;
+  padding: 0 38px;
+}
+.story-box-1 p {
+  font-weight: 500;
+  line-height: 28px;
+  color: #666666;
+  padding: 0 38px;
+  padding-bottom: 34px;
+}
+.story-box {
+  /* width: 290px; */
+  background-color: #fff;
+  border-radius: 16px;
+}
+.story-box img {
+  width: 100%;
+  border-radius: 18px 16px 0 0;
+}
+.story-btn-1 {
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 14px 20px;
+  border-radius: 100px;
+  background-color: #3cd8e8;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+  position: relative;
+  left: 38px;
+  top: -25px;
+}
+.story-btn-1:hover {
+  background-color: #fea301;
+}
+.story-btn {
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 100px;
+  border: none;
+  transition: 0.5s;
+  cursor: pointer;
+  position: relative;
+  left: 38px;
+  top: -22px;
+}
+.story-btn-2,
+.story-btn-4,
+.story-btn-5 {
+  background-color: #95b226;
+}
+.story-btn-2:hover,
+.story-btn-4:hover,
+.story-btn-5:hover,
+.story-btn-3:hover {
+  background-color: #fea301;
+}
+.story-btn-3 {
+  background-color: #5d58f0;
+}
+.story-box h5 {
+  font-family: "Quicksand", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 28px;
+  padding: 0 38px 28px 38px;
+}
+.btn-story {
+  text-align: center;
+  margin-top: 80px;
+}
+.for-mobile {
+  display: none;
+}
 /* resposive for smaller device */
 @media screen and (max-width: 576px) {
   .header {
@@ -290,8 +408,59 @@ main {
   .curriculum {
     padding: 10%;
   }
+  .curriculum h2 {
+    font-size: 1.625rem;
+  }
   .curriculum-container {
     grid-template-columns: 1fr;
     gap: 15px;
+  }
+
+  /* story section */
+  .story-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .story-box-1 {
+    display: none;
+  }
+  .story-btn {
+    font-family: "Raleway", serif;
+    font-size: 0.56rem;
+    font-weight: 500;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 100px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    top: -2%;
+    transform: translate(-50%, -50%);
+  }
+  .for-mobile {
+    display: block;
+  }
+  .story {
+    background-size: contain;
+    padding: 0 15px;
+  }
+  .story h2 {
+    font-size: 1.625rem;
+    margin-bottom: 20px;
+  }
+  .btn-story {
+    margin-top: 20px;
+  }
+  .btn-story button {
+    font-family: "Quicksand", serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 8px 35px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
   }
 }
